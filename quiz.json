@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "a": "Hyper Text Markup Language",
+    "b": "Hot Mail",
+    "c": "How to Make Landingpage",
+    "d": "Hyperlink Text Mark Language",
+    "correct": "a"
+  },
+  {
+    "question": "What does CSS stand for?",
+    "a": "Colorful Style Sheets",
+    "b": "Cascading Style Sheets",
+    "c": "Creative Style Sheets",
+    "d": "Computer Style Sheets",
+    "correct": "b"
+  },
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "a": "<js>",
+    "b": "<scripting>",
+    "c": "<script>",
+    "d": "<javascript>",
+    "correct": "c"
+  }
+]
