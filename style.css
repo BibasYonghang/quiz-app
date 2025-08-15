@@ -1,37 +1,25 @@
-body {
-  background: rgb(186, 209, 54);
+/* shared components */
+
+.container {
+  background: rgb(238, 146, 9);
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
 }
 
-.quiz-container {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
 
-h2 {
-  margin-bottom: 20px;
-}
 
 ul {
   list-style: none;
   padding: 0;
 }
 
-li {
-  margin: 10px 0;
-}
-
 button {
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 20px;
-  background: #007bff;
+  background: rgb(238, 146, 9);
   border: none;
   color: white;
   border-radius: 5px;
@@ -39,5 +27,99 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: rgb(255, 96, 4);
+}
+
+/* hide native radio buttons */
+.custom-radio input {
+  display: none;
+}
+
+/* outer circle of custom radio */
+.custom-radio span {
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+  border: 2px solid rgb(238, 146, 9);
+  /* same as text */
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+/* inner dot when checked */
+.custom-radio input:checked+span::before {
+  content: '';
+  width: 15px;
+  height: 14px;
+  background: rgb(238, 146, 9);
+  /* same as text */
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* styling for screen size larger than 500px */
+@media (min-width:500px) {
+  .heading {
+    color: white;
+    font-size: 50px;
+    margin-top: 16vh;
+  }
+
+  .quiz-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+  h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: rgb(238, 146, 9);
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(238, 146, 9);
+  }
+
+  .custom-radio span:hover {
+    border-color: rgb(255, 96, 4);
+  }
+}
+
+/* styling for screen size smaller than 500px */
+@media (max-width:499px) {
+  .heading {
+    color: rgb(231, 224, 224);
+    font-size: 39px;
+    margin-top: 16vh;
+  }
+
+  .quiz-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 265px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: rgb(238, 146, 9);
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: rgb(238, 146, 9);
+  }
 }

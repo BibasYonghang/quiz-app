@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App - Test Your Knowledge Online</title>
+  <meta name="description"
+    content="Play the Quiz App online! Test your knowledge with fun questions and interactive answers. Perfect for learners of all ages.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph / Social Media Image -->
+  <meta property="og:title" content="Quiz App - Test Your Knowledge Online">
+  <meta property="og:description"
+    content="Play the Quiz App online! Test your knowledge with fun questions and interactive answers. Perfect for learners of all ages.">
+  <meta property="og:image" content="social-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bibasyonghang.github.io/quiz-app/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quiz App - Test Your Knowledge Online">
+  <meta name="twitter:description"
+    content="Play the Quiz App online! Test your knowledge with fun questions and interactive answers. Perfect for learners of all ages.">
+  <meta name="twitter:image" content="social-image.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bibasyonghang.github.io/quiz-app/">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body class="container">
+  <h1 class="heading">Quiz App</h1>
   <div class="quiz-container" id="quiz">
     <h2 id="question">Loading question...</h2>
     <ul>
       <li>
-        <input type="radio" name="answer" class="answer" id="a" />
-        <label for="a" id="a_text">Answer A</label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" id="a" />
+          <span></span>
+          Answer A
+        </label>
       </li>
       <li>
-        <input type="radio" name="answer" class="answer" id="b" />
-        <label for="b" id="b_text">Answer B</label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" id="b" />
+          <span></span>
+          Answer B
+        </label>
       </li>
       <li>
-        <input type="radio" name="answer" class="answer" id="c" />
-        <label for="c" id="c_text">Answer C</label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" id="c" />
+          <span></span>
+          Answer C
+        </label>
       </li>
       <li>
-        <input type="radio" name="answer" class="answer" id="d" />
-        <label for="d" id="d_text">Answer D</label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" id="d" />
+          <span></span>
+          Answer D
+        </label>
       </li>
     </ul>
     <button id="submit">Submit</button>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Structured Data JSON-LD for SEO -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Quiz App",
+  "description": "Play the Quiz App online! Test your knowledge with fun questions and interactive answers.",
+  "url": "https://bibasyonghang.github.io/quiz-app/",
+  "image": "https://bibasyonghang.github.io/quiz-app/social-image.png"
+}
+</script>
+
+  <script type="module" src="script.js"></script>
 </body>
+
 </html>
